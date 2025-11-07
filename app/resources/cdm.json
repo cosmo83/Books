@@ -1,0 +1,187 @@
+[
+    {
+      "_version": "3.0",
+      "identification": {
+        "id": "BooksAdminRole",
+        "title": "{{title}}",
+        "entityType": "role"
+      },
+      "payload": {
+        "catalogs": [
+          {
+            "id": "BooksCatalog"
+          }
+        ],
+        "spaces": [
+          {
+            "id": "BooksSpace"
+          }
+        ],
+        "apps": [
+          {
+            "id": "com.satinfotech.com.books"
+          }
+        ]
+      },
+      "texts": [
+        {
+          "locale": "en",
+          "textDictionary": {
+            "title": "Books Admin Role"
+          }
+        },
+        {
+          "locale": "",
+          "textDictionary": {
+            "title": "Books Admin Role"
+          }
+        }
+      ]
+    },
+    {
+      "_version": "3.0",
+      "identification": {
+        "id": "BooksCatalog",
+        "title": "{{title}}",
+        "entityType": "catalog"
+      },
+      "payload": {
+        "viz": [
+          {
+            "appId": "com.satinfotech.com.books",
+            "vizId": "intent1"
+          }
+        ]
+      },
+      "texts": [
+        {
+          "locale": "en",
+          "textDictionary": {
+            "title": "Books Catalog"
+          }
+        },
+        {
+          "locale": "",
+          "textDictionary": {
+            "title": "Books Catalog"
+          }
+        }
+      ]
+    },
+    {
+      "_version": "3.1.0",
+      "identification": {
+        "id": "BooksSpace",
+        "title": "{{title}}",
+        "description": "{{description}}",
+        "entityType": "space"
+      },
+      "payload": {
+        "contentNodes": [
+          {
+            "type": "workpage",
+            "id": "BooksWorkpage"
+          }
+        ]
+      },
+      "texts": [
+        {
+          "locale": "en",
+          "textDictionary": {
+            "title": "Books Space",
+            "description": "Books Space"
+          }
+        },
+        {
+          "locale": "",
+          "textDictionary": {
+            "title": "Books Space",
+            "description": "Books Space"
+          }
+        }
+      ]
+    },
+    {
+      "_version": "3.2.0",
+      "identification": {
+        "id": "BooksWorkpage",
+        "entityType": "workpage",
+        "title": "{{title}}",
+        "description": "{{description}}"
+      },
+      "payload": {
+        "workpageConfig": {
+          "title": "{{title}}"
+        },
+        "rows": [
+          {
+            "id": "row-1",
+            "rowConfig": {},
+            "columns": [
+              {
+                "id": "col-11",
+                "columnConfig": {
+                  "columnWidth": 8
+                },
+                "cells": [
+                  {
+                    "id": "cell-111",
+                    "cellConfig": {},
+                    "widgets": [
+                      {
+                        "id": "widg-1111",
+                        "viz": {
+                          "appId": "com.satinfotech.com.books",
+                          "vizId": "intent1"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "texts": [
+        {
+          "locale": "en",
+          "textDictionary": {
+            "title": "Books Workpage",
+            "description": "Books Workpage"
+          }
+        },
+        {
+          "locale": "",
+          "textDictionary": {
+            "title": "Books Workpage",
+            "description": "Books Workpage"
+          }
+        }
+      ]
+    },
+    {
+      "_version": "3.2.0",
+      "identification": {
+        "id": "Books",
+        "entityType": "site"
+      },
+      "payload": {
+        "siteConfig": {
+          "title": "Books",
+          "alias": "books",
+          "displaySettings": {
+            "launchpadViewMode": "SpacesAndWorkPages"
+          },
+          "userCapabilities": {
+            "supportedLanguages": [
+              "en"
+            ]
+          },
+          "browserSettings": {
+            "asynchronousModuleLoading": true
+          }
+        }
+      }
+    }
+  ]
