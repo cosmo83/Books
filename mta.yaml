@@ -84,12 +84,12 @@ modules:
     build-parameters:
       build-result: app/
       requires:
-        - name: Booksbooks
+        - name: books
           artifacts:
             - books.zip
           target-path: app/
 
-  - name: Booksbooks
+  - name: books
     type: html5
     path: app/books
     build-parameters:
@@ -109,7 +109,7 @@ modules:
       memory: 256M
     properties:
       TENANT_HOST_PATTERN: "^(.*)-${default-uri}"
-      OWN_SAP_CLOUD_SERVICE: "[\"booksservice\"]"
+      OWN_SAP_CLOUD_SERVICE: "[\"books.service\"]"
       COOKIE_BACKWARD_COMPATIBILITY: true
     requires:
       - name: srv-api
