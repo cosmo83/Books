@@ -172,7 +172,7 @@ resources:
       service-plan: application
       config:
         xsappname: Books-${org}-${space}
-        appName: Books-${org}-${space}
+        appName: com-satinfotech-com-books-${org}-${space}
         displayName: Books
         description: A simple CAP project.
         category: 'Category'

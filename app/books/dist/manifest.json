@@ -32,7 +32,7 @@
 		},
 		"crossNavigation": {
 			"inbounds": {
-				"books-display": {
+				"intent1": {
 					"semanticObject": "books",
 					"action": "display",
 					"signature": {

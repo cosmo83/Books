@@ -15,6 +15,7 @@
       "version": "1.19.3",
       "toolsId": "ebd289f0-b9ca-4fb4-9cb3-7575281d75aa"
     },
+    
     "dataSources": {
       "mainService": {
         "uri": "odata/v4/catalog/",
@@ -27,7 +28,7 @@
     },
     "crossNavigation": {
       "inbounds": {
-        "books-display": {
+        "intent1": {
           "semanticObject": "books",
           "action": "display",
           "signature": {
